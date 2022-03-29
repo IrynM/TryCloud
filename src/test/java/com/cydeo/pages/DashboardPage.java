@@ -34,10 +34,22 @@ public class DashboardPage {
     public List<WebElement> allModulesFromDashboard;
 
 
+    @FindBy(xpath = "//li[@data-id='files']")
+    public WebElement filesModule;
+
+    @FindBy(xpath = "//th[@id='headerSelection'][1]")
+    public WebElement checkboxFiles;
+
+    @FindBy(xpath = "//table[@class='list-container  has-controls']")
+public WebElement getCheckboxFiles2;
+
+
 
     public void login() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
-
+        this.username.sendKeys(ConfigurationReader.getProperty("user"));
+        this.password.sendKeys(ConfigurationReader.getProperty("password"));
+        this.logInButton.click();
     }
 
 }
