@@ -475,4 +475,25 @@ public static void switchWindowAndVerify (String expectedUrl, String expectedTit
 
 
 
+    /**
+     * check all checkboxes by clicking check all button
+     * @return true if all checked, false if not
+     */
+//    public static boolean checkAll(){
+//        Driver.getDriver().findElement(By.linkText("Check All")).click();
+//
+//        List<WebElement> allCheckboxes =
+//                Driver.getDriver().findElements(By.cssSelector("input[id$='OrderSelector'][type='checkbox']"));
+//
+//        boolean result = true;
+//        // as long as one of them is not checked, return false
+//        for(WebElement eachCheckbox : allCheckboxes ){
+//            if(! eachCheckbox.isSelected()){
+//                result = false;
+//            }
+//        }
+//        return result;
+//    }
+
+
 }

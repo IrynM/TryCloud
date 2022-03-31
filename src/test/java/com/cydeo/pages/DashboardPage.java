@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class DashboardPage {
+public class DashboardPage extends BasePage {
 
     public DashboardPage() {
         PageFactory.initElements(Driver.getDriver(), this);
@@ -37,11 +37,14 @@ public class DashboardPage {
     @FindBy(xpath = "//li[@data-id='files']")
     public WebElement filesModule;
 
-    @FindBy(xpath = "//th[@id='headerSelection'][1]")
+
+    ////label[@for='select_all_files']
+  //  @FindBy(xpath = "//th[@id='headerSelection'][1]")
+    @FindBy(xpath = "//label[@for='select_all_files']")
     public WebElement checkboxFiles;
 
-    @FindBy(xpath = "//table[@class='list-container  has-controls']")
-public WebElement getCheckboxFiles2;
+//    @FindBy(xpath = "//table[@class='list-container  has-controls']")
+//public WebElement getCheckboxFiles2;
 
 
 
