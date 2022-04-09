@@ -1,4 +1,4 @@
-@test4
+@test4  @smoke
 Feature: As a user, I should be able to access to Files module.
 
   Scenario: verify users can access to Files module

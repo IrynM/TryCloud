@@ -1,4 +1,4 @@
-@test1
+@test1 @smoke
 Feature: As a user, I should be able to log in.
   Scenario Outline: Verify login with valid credentials
     Given user on the login page "http://qa3.trycloud.net/index.php/login?clear=1"
