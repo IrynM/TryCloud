@@ -1,5 +1,5 @@
+@test5
 Feature: As a user, I should be able to access to Files module - Favorites button
- @test5
   Scenario: Verify users to add files to Favorites
     Given user on the dashboard page
     When the user clicks the "Files" module

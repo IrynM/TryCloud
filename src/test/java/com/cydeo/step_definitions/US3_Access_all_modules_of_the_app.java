@@ -32,15 +32,7 @@ DashboardPage dashboardPage= new DashboardPage();
 
     @Then("Verify the user see the following:")
     public void verifyTheUserSeeTheFollowing(List<String> expectedModule ) {
-//        List<WebElement> actualelements = dashboardPage.allModulesFromDashboard;
-//        List<String> actual = new ArrayList<>();
 
-//        for (WebElement each : actualelements) {
-//            actual.add(each.getText());
-//            System.out.println("actual = " + actual);
-//        }
-//        Assert.assertEquals(expectedModule, actual);
-//        Driver.closeDriver();
 
         for (int i = 0; i <= 8; i++) {
             String tab = Driver.getDriver().findElement(By.xpath("(//ul[@id='appmenu'])/li[(" + (i + 1) + ")]/a")).getAttribute("aria-label");

@@ -32,6 +32,8 @@ public class DashboardPage extends BasePage {
 
     @FindBy(xpath = "//ul[@id='appmenu']//li")
     public List<WebElement> allModulesFromDashboard;
+    //   //ul[@id='appmenu']//*[@viewBox='0 0 20 20']/following-sibling::span
+
 
 
     @FindBy(xpath = "//li[@data-id='files']")
